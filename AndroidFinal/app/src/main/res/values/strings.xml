@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">王方顯-Final</string>
+    <string name="Song1">The Lazy Song</string>
+    <string name="Song2">Call Me Maybe</string>
+    <string name="Song3">Gift Of A Friend</string>
+    <string name="Song4">Radioactive</string>
+    <string name="Song5">In The End</string>
+    <string name="Song6">Talking Body</string>
+    <string name="PlayMusic">Play</string>
+    <string name="StopMusic">Stop</string>
+</resources>

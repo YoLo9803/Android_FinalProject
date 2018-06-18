@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/SongImg1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/the_lazy_song" />
+
+    <Button
+        android:id="@+id/SongBtn1"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/SongImg1"
+        android:layout_alignRight="@id/SongImg1"
+        android:layout_below="@id/SongImg1"
+        android:layout_marginTop="10dp"
+        android:text="@string/Song1" />
+
+    <ImageView
+        android:id="@+id/SongImg2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/SongBtn1"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/SongImg1"
+        android:layout_alignRight="@id/SongImg1"
+        app:srcCompat="@drawable/call_me_maybe" />
+
+    <Button
+        android:id="@+id/SongBtn2"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SongImg2"
+        android:layout_alignLeft="@id/SongImg2"
+        android:layout_alignRight="@id/SongImg2"
+        android:layout_marginTop="10dp"
+        android:text="@string/Song2" />
+
+    <ImageView
+        android:id="@+id/SongImg3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/gift_of_a_friend" />
+
+    <Button
+        android:id="@+id/SongBtn3"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SongImg3"
+        android:layout_alignLeft="@id/SongImg3"
+        android:layout_alignRight="@id/SongImg3"
+        android:layout_marginTop="10dp"
+        android:text="@string/Song3" />
+
+    <ImageView
+        android:id="@+id/SongImg4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@id/SongImg3"
+        android:layout_below="@id/SongBtn3"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/radioactive" />
+
+    <Button
+        android:id="@+id/SongBtn4"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SongImg4"
+        android:layout_alignLeft="@id/SongImg4"
+        android:layout_alignRight="@id/SongImg4"
+        android:layout_marginTop="10dp"
+        android:text="@string/Song4" />
+
+    <Button
+        android:id="@+id/SongBtn5"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SongImg5"
+        android:layout_alignLeft="@id/SongImg5"
+        android:layout_alignRight="@id/SongImg5"
+        android:layout_marginTop="10dp"
+        android:text="@string/Song5" />
+
+    <ImageView
+        android:id="@+id/SongImg6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@id/SongImg5"
+        android:layout_below="@id/SongBtn5"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/talking_body" />
+
+    <Button
+        android:id="@+id/SongBtn6"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SongImg6"
+        android:layout_alignLeft="@id/SongImg6"
+        android:layout_alignRight="@id/SongImg6"
+        android:layout_marginTop="10dp"
+        android:text="@string/Song6" />
+
+    <ImageView
+        android:id="@+id/SongImg5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        app:srcCompat="@drawable/in_the_end" />
+
+    <ImageSwitcher
+        android:id="@+id/imgSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="0.6"
+        android:layout_below="@id/SongBtn4"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/SongImg1"
+        android:layout_alignRight="@id/SongImg6"
+        />
+
+    <Button
+        android:id="@+id/PlayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:layout_below="@id/imgSwitcher"
+        android:layout_alignLeft="@id/imgSwitcher"
+        android:text="@string/PlayMusic" />
+
+    <Button
+        android:id="@+id/StopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:layout_below="@id/imgSwitcher"
+        android:layout_alignRight="@id/imgSwitcher"
+        android:text="@string/StopMusic" />
+
+</RelativeLayout>
